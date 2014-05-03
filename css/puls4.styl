@@ -1,5 +1,11 @@
+azul = #22BCE0
 gris_oscuro = #444
-azul = #22bce0
+gris_texto = #7A7A7A
+naranja = #DD4F24
+
+a
+	color naranja
+
 body
 	background: #e8e8e8
 	color: gris_oscuro
@@ -8,27 +14,121 @@ body
 
 header
 	background: gris_oscuro
+	box-shadow 0px 5px 0 rgba(0,0,0,0.2)
 	color: white
+	overfloat hidden
 	padding 1em
+	position relative
+	z-index 1
 
 	.logo
 		border-right 1px solid azul
 		width 60px
 		
 		img
-			width 52px
+			width 50px
 
 	.titular
+		margin 0 60px 0 70px
+
+		.filtro
+			color azul
+			font-weight bold
+			font-size 18px
+			font-style italic
+			text-decoration none
+		
+		.publicar
+			background naranja
+			color white
+			float right
+			font-style italic
+			margin -5px 1em 0 0
+			padding 0.2em 0.5em
+			text-decoration none
+			text-shadow 2px 2px 0 black
+
 		.titulo
 			font-size 18px
 			font-weight normal
 			margin 0 
 			padding 0
+	.usuario
+		position absolute
+		right 10px
+		top 10px
+
+		.avatar
+			margin 0 1em 0 0
+			position relative
+			z-index 2
+			img
+				width 50px
+				border-radius 50%
+		.flechita
+			background naranja
+			color white 
+			display block
+			padding 3px
+			position absolute
+			text-aling right 
+			right 0
+			top 15%
+			width 50%
+			z-index 0
 
 nav
 	background: azul
+	border-left solid 15px white
+	position relative
+	&:before
+		content ""
+		border-bottom solid 20px transparent
+		border-left solid 7px white
+		border-top solid 20px transparent
+		position absolute
+		top 0
+		left 0
+	.menu
+		height 40px
+		line-height 40px
+		margin 0
+		padding 0
+		overflow-x auto
+		white-space nowrap
+		li
+			display inline-block
+
+			a
+				color white
+				display block
+				margin 0 0.5em
+				padding 0 0.2em
+				text-decoration none
+.posts
+	padding 0.5em
+
+	.post
+		background white
+		border-radius 0 0 0.5em 0.5em
+		box-shadow 2px 2px 10px rgba(black, 0.2)
+		color gris_texto
+
+		.acciones 
+			border-top 3px solid azul
+
+		.descripcion
+			color gris_texto
+
+			.imagen
+				float left
+				img 
+					height 160px
+					vertical-align top
+					width 120px
+
 
 .left
 	float left
-.right: 
+.right 
 	float right

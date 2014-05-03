@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Vido responsive</title>
+
+	<style rel="stylesheet">
+		.wrapper{
+			max-width: 1000px;
+			margin: auto;
+		}
+		.contenedor{
+			height: 0;
+			overflow:hidden;
+			padding-top: 56.25%;
+			padding-bottom: 30px;
+			position:relative;
+		}
+		.contenedor iframe{
+			height: 100%;
+			width: 100%;
+			left:0;
+			top:0;
+			position: absolute;
+		}
+		
+		.columna1, .comlumna2{
+			width: 50%;
+			float: left;
+		}
+		@media screen and (max-width:  1000px){
+			.columna1,.comlumna2{
+				width: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="columna1">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, consequatur nihil corporis quaerat natus minus molestiae. Fuga, illo, ratione, quas, rem veniam ut inventore eveniet nostrum repudiandae voluptatibus officiis hic.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, consequatur nihil corporis quaerat natus minus molestiae. Fuga, illo, ratione, quas, rem veniam ut inventore eveniet nostrum repudiandae voluptatibus officiis hic.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, consequatur nihil corporis quaerat natus minus molestiae. Fuga, illo, ratione, quas, rem veniam ut inventore eveniet nostrum repudiandae voluptatibus officiis hic.</p>
+		</div>
+		<div class="comlumna2">
+			<h2>Video responsive</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, praesentium, sit, ipsam nisi et dolores ullam unde quisquam id deserunt ex consequuntur voluptas. Quam, excepturi perspiciatis id eius sed libero?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, consequatur nihil corporis quaerat natus minus molestiae. Fuga, illo, ratione, quas, rem veniam ut inventore eveniet nostrum repudiandae voluptatibus officiis hic.</p>
+			<div class="contenedor">
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/eM6H3HBE6co" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, consequatur nihil corporis quaerat natus minus molestiae. Fuga, illo, ratione, quas, rem veniam ut inventore eveniet nostrum repudiandae voluptatibus officiis hic.</p>
+		</div>
+	</div>
+	
+</body>
+</html>
